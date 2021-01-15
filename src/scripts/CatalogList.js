@@ -1,12 +1,22 @@
 import { createPlan } from "./plan.js"
+import { Catalog } from "./catalog.js"
 
 export const CatalogList = ( foodArray ) => {
-    const contentElement = document.querySelector("container");
-    const catalog = createPlan();
+    const contentElement = document.querySelector(".container");
+    // const planRows = createPlan();
 
     let catalogHTML = "";
-    for(const item of foodArray) {
-        catalogHTML += Catalog(item);
+    // for(const item of plant) {
+    //     catalogHTML += Catalog(item);
+    // }
+
+    console.log("hobo downtown")
+    console.table(foodArray);
+
+    for (let row of foodArray) {
+        for (let col of row) {
+            catalogHTML += Catalog(foodArray[row][col]);
+        }
     }
 
     contentElement.innerHTML += `

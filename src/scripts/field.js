@@ -1,8 +1,12 @@
 const _plantArray = [];
 
 const addPlant = ( seed ) => {
-
+    /*
+        seed : object or array that contains 2 objects
+    */
     // extract corn objs
+    console.log("Seed is ");
+    console.log(Object.keys(seed));
     if (Array.isArray(seed)) {
         console.log("this is an array");
         _plantArray.push(...seed)

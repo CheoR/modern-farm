@@ -1,4 +1,5 @@
 import { createPlan } from "./plan.js";
+import { CatalogList } from "./CatalogList.js"
 
 const yearlyPlan = createPlan()
 
@@ -29,3 +30,7 @@ addPlant(asparagusSeed);
 plants = usePlants()
 console.log(`Plant list: ${plants}`)
 
+console.log("AS TABLE");
+console.table(yearlyPlan);
+
+CatalogList(yearlyPlan);
