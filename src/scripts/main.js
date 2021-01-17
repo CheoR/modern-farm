@@ -38,12 +38,53 @@ console.log("Welcome to the main module")
 // console.table(plants)
 
 
-import { createPlan } from "./plan.js"
-import { plantSeeds } from "./tractor.js"
-import { usePlants } from "./field.js"
+// import { createPlan } from "./plan.js"
+// import { plantSeeds } from "./tractor.js"
+// import { usePlants } from "./field.js"
 
-const yearlyPlan = createPlan();
-plantSeeds(yearlyPlan)
-const plants = usePlants();
-console.log("DID THEY PLANT?")
-console.table(plants)
+// const yearlyPlan = createPlan();
+// plantSeeds(yearlyPlan)
+// const plants = usePlants();
+// console.log("DID THEY PLANT?")
+// console.table(plants)
+
+// import { createPlan } from "./plan.js"
+// import { plantSeeds } from "./tractor.js"
+// import { usePlants } from "./field.js"
+// import { harvestPlants } from "./harvester.js"
+
+
+// console.log("====== TESTING TRACTOR ========")
+
+// const plan = [
+//     ["Corn", "Potato"],
+//     ["Asparagus", "Soybean"],
+//     ["Sunflower", "Wheat"],
+// ]
+
+// let plantedSeeds
+// let harvestedPlants
+
+// console.log("plan")
+// console.table(plan)
+// console.log("plan")
+
+// plantSeeds(plan)
+// plantedSeeds = usePlants()
+// console.log("planted seeds")
+// console.table(plantedSeeds)
+// console.log("planted seeds")
+
+// harvestedPlants = harvestPlants(plantedSeeds)
+// console.log("harvested Plants")
+// console.table(harvestedPlants)
+// console.log("harvested Plants")
+
+// const yearlyPlan = createPlan();
+// plantSeeds(yearlyPlan)
+
+// const plants = usePlants()
+
+// console.table(plants)
+// harvestPlants(plants)
+// console.log("====== TESTING TRACTOR ========")

@@ -19,6 +19,12 @@ const _GETSEED = {
 export const plantSeeds = ( plansArray ) => {
     /*
         plansArray: 2D array
+
+        [
+            ["Corn", "Potato"],
+            ["Asparagus", "Soybean"],
+            ["Sunflower", "Wheat"],
+        ]
     */
     let seed = null;
     for(let row=0; row < plansArray.length; row++) {
