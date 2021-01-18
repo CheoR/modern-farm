@@ -1,9 +1,11 @@
-import { createPlan } from "./plan.js";
+// import { createPlan } from "./plan.js";
 
-const yearlyPlan = createPlan()
+// import { createPlan } from "./plan.js";
+
+// const yearlyPlan = createPlan()
 
 console.log("Welcome to the main module")
-console.log(`Yearly plan: \n${yearlyPlan}`);
+// console.log(`Yearly plan: \n${yearlyPlan}`);
 
 
 /* tempoary test code */
@@ -13,21 +15,21 @@ console.log(`Yearly plan: \n${yearlyPlan}`);
 
 // console.log(asparagusSeed);
 
-/* tempoary test code */
-import { addPlant, usePlants } from "./field.js";
-import { createCorn } from "./seeds/corn.js"
-import { createAsparagus } from "./seeds/asparagus.js";
+// /* tempoary test code */
+// import { addPlant, usePlants } from "./field.js";
+// import { createCorn } from "./seeds/corn.js"
+// import { createAsparagus } from "./seeds/asparagus.js";
 
-const cornSeeds = createCorn();
-const asparagusSeed = createAsparagus();
+// const cornSeeds = createCorn();
+// const asparagusSeed = createAsparagus();
 
-let plants = undefined;
+// let plants = undefined;
 
-addPlant(cornSeeds);
-addPlant(asparagusSeed);
+// addPlant(cornSeeds);
+// addPlant(asparagusSeed);
 
-plants = usePlants()
-console.log(`Plant list: ${plants}`)
+// plants = usePlants()
+// console.log(`Plant list: ${plants}`)
 
 // import { createPlan } from "./plan.js"
 
@@ -77,10 +79,12 @@ console.log(`Plant list: ${plants}`)
 // console.log("DID THEY PLANT?")
 // console.table(plants)
 
-// import { createPlan } from "./plan.js"
-// import { plantSeeds } from "./tractor.js"
-// import { usePlants } from "./field.js"
-// import { harvestPlants } from "./harvester.js"
+import { createPlan } from "./plan.js"
+import { plantSeeds } from "./tractor.js"
+import { usePlants } from "./field.js"
+import { harvestPlants } from "./harvester.js"
+import { Catalog } from "./catalog.js"
+import { createPotato } from "./seeds/potato.js";
 
 
 // console.log("====== TESTING TRACTOR ========")
@@ -91,20 +95,22 @@ console.log(`Plant list: ${plants}`)
 //     ["Sunflower", "Wheat"],
 // ]
 
-// let plantedSeeds
-// let harvestedPlants
+
+let plantedSeeds
+let harvestedPlants
 
 // console.log("plan")
 // console.table(plan)
 // console.log("plan")
-
-// plantSeeds(plan)
-// plantedSeeds = usePlants()
+const yearlyPlan = createPlan()
+plantSeeds(yearlyPlan)
+plantedSeeds = usePlants()
 // console.log("planted seeds")
 // console.table(plantedSeeds)
 // console.log("planted seeds")
 
-// harvestedPlants = harvestPlants(plantedSeeds)
+harvestedPlants = harvestPlants(plantedSeeds)
+Catalog(harvestedPlants)
 // console.log("harvested Plants")
 // console.table(harvestedPlants)
 // console.log("harvested Plants")
