@@ -4,7 +4,7 @@ export const Catalog = ( foodArray ) => {
     */
     const contentElement = document.querySelector(".container");
 
-    let catalogHTML = "<h2>Catalog of Seeds</h2>";
+    let catalogHTML = "";
     for(const item of foodArray) {
         catalogHTML += `
         <section class="plant">
@@ -14,18 +14,5 @@ export const Catalog = ( foodArray ) => {
     }
 
     contentElement.innerHTML  += catalogHTML
-    //     catalogHTML += Catalog(item);
-    // }
 
-    // contentElement.innerHTML += `
-    //     <section class="plant">
-    //         ${catalogHTML}
-    //     </section>
-    // `
 };
-
-// export const Catalog = ( food ) => {
-//     return `
-//         <section class="plant">${food.type}</section>
-//     `
-// }

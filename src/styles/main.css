@@ -1,7 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
+*  {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
 /*Typography
 --------------------------------------------------------------*/
+
+:root {
+    --primary-color: #fffdf7;
+    --secondary-color: #6b3426;
+    --triciary-color: #349db6;
+}
 body,
 button,
 input,
@@ -18,19 +30,70 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
-.blue {
-    background-color: aliceblue;
+html {
+    height: 100%;
 }
 
-.green {
-    background-color: darkseagreen;
+body {
+    min-height: 100%;
+    background: var(--primary-color);
 }
 
-.purple {
-    background-color: mediumorchid;
+img { 
+    width: 100%;
 }
 
-.red {
-    background-color: darksalmon;
+header > div {
+    flex-basis: 10em;
 }
 
+.container {
+    background: var(--triciary-color);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 125px auto;
+    width: 90%;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.plant {
+    flex-grow: 1;
+    background: gray;
+    text-align: center;
+    padding: .5em;
+    margin: .2em;
+    /* min-width: 109px;
+    max-width: 190px; */
+    flex-basis: 150px;
+    border-radius: 5px;
+    /* font-size: 1.5em; 14px root */
+}
+
+footer {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    font-size: 2em;
+    margin: 0 auto;
+    flex-basis: 10em;
+}
+
+header,
+h1 {
+    background: linear-gradient( lightblue 50%, tan 85%, brown 90%,green 100%);
+}
+
+p {
+    margin-bottom: 10px;
+}
